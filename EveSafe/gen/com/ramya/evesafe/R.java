@@ -45,7 +45,6 @@ public final class R {
         public static final int call_call=0x7f080002;
         public static final int call_contacts=0x7f080001;
         public static final int call_num=0x7f080000;
-        public static final int dark=0x7f08001d;
         public static final int email_back=0x7f080016;
         public static final int email_gall=0x7f080015;
         public static final int email_id=0x7f080014;
@@ -56,7 +55,6 @@ public final class R {
         public static final int home_sendsms=0x7f08000b;
         public static final int home_sos=0x7f080009;
         public static final int home_tips=0x7f08000c;
-        public static final int light=0x7f08001c;
         public static final int loc_back=0x7f080012;
         public static final int loc_cont=0x7f08000f;
         public static final int loc_ednum=0x7f08000e;
@@ -146,7 +144,5 @@ public final class R {
  All customizations that are NOT specific to a particular API-level can go here. 
          */
         public static final int AppTheme=0x7f060001;
-        public static final int BlackTheme=0x7f060003;
-        public static final int LightTheme=0x7f060002;
     }
 }

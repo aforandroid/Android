@@ -1,9 +1,4 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android" >
-<item android:id="@+id/light"
-    android:title="LightTheme"
-    android:showAsAction="always"/>
-<item android:id="@+id/dark"
-    android:title="DarkTheme"
-    android:showAsAction="always"></item>
+
 
 </menu>
