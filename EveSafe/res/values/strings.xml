@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">EveSafe</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+ <string name="sendmgs">Send Message</string>
+    <string name="sendlo">Send Location</string>
+    <string name="dislo">Display Location</string>
+    <string name="emerg">Emergency Calls</string>
+    <string name="sendmail">Send Email</string>
+    <string name="tips">Safety Tips</string>
+    <string name="chcontacts">Choose Contacts</string>
+    <string name="call">Call</string>
+    <string name="lati">Latitude :</string>
+    <string name="latval"></string>
+    <string name="longi">Longitude :</string>
+    <string name="addr">Address :</string>
+    <string name="chattah">Choose Attachment</string>
+    <string name="sendfeedback">Send Feedback</string>
+    <string name="getadd">Get Location</string>
+    <string name="lonval"/>
+    <string name="adrval"/>
+    <string name="mymail">sendme2ramya@gmail.com</string>
+    <string name="typefeed">Type your feedback here</string>
+    <string name="bak">Back</string>
+    <string name="callpolice">Call Police</string>
+    <string name="callambulance">Call Ambulance</string>
+    <string name="callfireservice">Call Fire Service</string>
+    <string name="rate">&quot;YOUR RATE IS : &quot;</string>
+    <string name="rating">"RATE FENDER "</string>
+    <string name="feed">TYPE YOUR FEEDBACK  :</string>
+    <string name="sos">Sos</string>
+    <string name="emailid">EMAIL ID</string>
+    <string name="loc">Your Location</string>
+</resources>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".SendSMS" >
+
+    <ImageButton
+        android:id="@+id/sms_cont"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="65dp"
+        android:background="@android:color/transparent"
+        android:contentDescription="@null"
+        android:src="@drawable/contacts" />
+
+    <EditText
+        android:id="@+id/sms_num"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/sms_cont"
+        android:layout_marginTop="18dp"
+        android:ems="10"
+        android:hint="@string/chcontacts"
+        android:inputType="phone" >
+
+        <requestFocus />
+    </EditText>
+
+    <ImageButton
+        android:id="@+id/sms_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/sms_cont"
+        android:layout_below="@+id/sms_num"
+        android:layout_marginLeft="50dp"
+        android:background="@android:color/transparent"
+        android:contentDescription="@null"
+        android:layout_marginTop="75dp"
+        android:src="@drawable/back" />
+
+    <ImageButton
+        android:id="@+id/sms_send"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/sms_back"
+        android:layout_toLeftOf="@+id/sms_back"
+        android:background="@android:color/transparent"
+        android:contentDescription="@null"
+        android:src="@drawable/send" />
+
+</RelativeLayout>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CallSOS"
+    android:background="#FFFFFF" >
+
+    <ImageButton
+        android:id="@+id/sos_firbut"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/sos_ambbut"
+        android:layout_toLeftOf="@+id/sos_polibut"
+        android:background="@android:color/transparent"
+        android:contentDescription="@null"
+        android:src="@drawable/fireserv" />
+
+    <ImageButton
+        android:id="@+id/sos_polibut"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="66dp"
+        android:background="@android:color/transparent"
+        android:contentDescription="@null"
+        android:src="@drawable/police" />
+
+    <ImageButton
+        android:id="@+id/sos_bakbut"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/sos_firbut"
+        android:layout_marginTop="16dp"
+        android:layout_toLeftOf="@+id/sos_ambbut"
+        android:background="@android:color/transparent"
+        android:contentDescription="@null"
+        android:src="@drawable/back" />
+
+    <ImageButton
+        android:id="@+id/sos_ambbut"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/sos_polibut"
+        android:layout_marginTop="19dp"
+        android:layout_toRightOf="@+id/sos_polibut"
+        android:background="@android:color/transparent"
+        android:contentDescription="@null"
+        android:src="@drawable/hospital" />
+
+</RelativeLayout>

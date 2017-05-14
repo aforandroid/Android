@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Call"
+    android:background="#FFFFFF" >
+
+    <EditText
+        android:id="@+id/call_num"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/call_contacts"
+        android:layout_marginTop="28dp"
+        android:ems="10"
+        android:hint="@string/chcontacts"
+        android:inputType="phone" >
+        <requestFocus android:layout_width="wrap_content" />
+
+    </EditText>
+
+    <ImageButton
+        android:id="@+id/call_contacts"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="22dp"
+        android:background="@android:color/transparent"
+        android:contentDescription="@null"
+        android:src="@drawable/contacts" />
+
+    <ImageButton
+        android:id="@+id/call_call"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/call_num"
+        android:layout_marginTop="60dp"
+        android:layout_toLeftOf="@+id/call_contacts"
+        android:background="@android:color/transparent"
+        android:contentDescription="@null"
+        android:src="@drawable/sos" />
+
+    <ImageButton
+        android:id="@+id/call_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/call_call"
+        android:background="@android:color/transparent"
+        android:contentDescription="@null"
+        android:layout_toRightOf="@+id/call_contacts"
+        android:src="@drawable/back" />
+
+</RelativeLayout>

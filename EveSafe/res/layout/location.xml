@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#FFFFFF"
+    tools:context=".SendLocation" >
+
+    <EditText
+        android:id="@+id/loc_ednum"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/loc_cont"
+        android:layout_marginTop="22dp"
+        android:ems="10"
+        android:hint="@string/chcontacts"
+        android:inputType="phone" />
+
+    <ImageButton
+        android:id="@+id/loc_cont"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="18dp"
+        android:background="@android:color/transparent"
+        android:contentDescription="@null"
+        android:src="@drawable/contacts" />
+
+    <ImageButton
+        android:id="@+id/loc_getlo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/loc_ednum"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="18dp"
+        android:background="@android:color/transparent"
+        android:contentDescription="@null"
+        android:src="@drawable/location" />
+
+    <EditText
+        android:id="@+id/loc_loc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/loc_getlo"
+        android:layout_marginTop="23dp"
+        android:ems="10"
+        android:hint="@string/loc"
+        android:inputType="text" />
+
+    <ImageButton
+        android:id="@+id/loc_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/loc_send"
+        android:layout_toRightOf="@+id/loc_cont"
+        android:background="@android:color/transparent"
+        android:contentDescription="@null"
+        android:src="@drawable/back" />
+
+    <ImageButton
+        android:id="@+id/loc_send"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/loc_loc"
+        android:layout_marginTop="26dp"
+        android:layout_toLeftOf="@+id/loc_getlo"
+        android:background="@android:color/transparent"
+        android:contentDescription="@null"
+        android:src="@drawable/send" />
+
+</RelativeLayout>

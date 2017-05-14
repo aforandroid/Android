@@ -1,0 +1,72 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"  
+     android:background="@drawable/homescreen" >
+
+    <ImageButton
+        android:id="@+id/home_call"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="166dp"
+        android:layout_marginLeft="18dp"
+        android:background="@android:color/transparent"
+        android:contentDescription="@null"
+        android:src="@drawable/call" />
+
+    <ImageButton
+        android:id="@+id/home_sos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/home_call"
+        android:layout_alignLeft="@+id/home_call"
+        android:layout_marginBottom="20dp"
+        android:background="@android:color/transparent"
+        android:contentDescription="@null"
+        android:src="@drawable/sos" />
+
+    <ImageButton
+        android:id="@+id/home_sendmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/home_sendsms"
+        android:layout_alignRight="@+id/home_tips"
+        android:layout_marginRight="39dp"
+        android:background="@android:color/transparent"
+        android:contentDescription="@null"
+        android:src="@drawable/sendmail" />
+
+    <ImageButton
+        android:id="@+id/home_location"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/home_sendsms"
+        android:background="@android:color/transparent"
+        android:contentDescription="@null"
+        android:src="@drawable/location" />
+
+    <ImageButton
+        android:id="@+id/home_tips"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/home_sos"
+        android:background="@android:color/transparent"
+        android:contentDescription="@null"
+        android:src="@drawable/tips" />
+
+    <ImageButton
+        android:id="@+id/home_sendsms"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/home_sos"
+        android:layout_alignLeft="@+id/home_sos"
+        android:layout_marginBottom="23dp"
+        android:layout_marginLeft="45dp"
+        android:background="@android:color/transparent"
+        android:contentDescription="@null"
+        android:src="@drawable/sendsms" />
+
+</RelativeLayout>
