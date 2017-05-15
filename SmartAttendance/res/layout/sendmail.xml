@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#FFFFFF"
+    tools:context=".SendMail" >
+
+    <EditText
+        android:id="@+id/txtstudid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="44dp"
+        android:ems="10"
+        android:hint="@string/stuid"
+        android:singleLine="true" >
+
+        <requestFocus />
+    </EditText>
+
+    <ImageButton
+        android:id="@+id/ibtsend"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/ibtnok"
+        android:layout_alignTop="@+id/ibtatta"
+		android:background="@android:color/transparent"
+        android:contentDescription="@null"
+        android:src="@drawable/send" />
+
+    <ImageButton
+        android:id="@+id/ibthome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/ibtsend"
+        android:layout_marginRight="17dp"
+        android:background="@android:color/transparent"
+        android:contentDescription="@null"
+        android:src="@drawable/home" />
+
+    <TextView
+        android:id="@+id/txtmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtmbody"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="39dp"
+        android:text="@string/empty"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <EditText
+        android:id="@+id/txtmbody"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/txtstudid"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/ibtnok"
+        android:layout_marginTop="23dp"
+        android:ems="10"
+        android:hint="@string/mail"
+        android:inputType="textMultiLine" />
+
+    <ImageButton
+        android:id="@+id/ibtatta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/txtmail"
+        android:layout_marginLeft="25dp"
+        android:background="@android:color/transparent"
+        android:contentDescription="@null"
+        android:src="@drawable/atta" />
+
+    <ImageButton
+        android:id="@+id/ibtnok"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtstudid"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:background="@android:color/transparent"
+        android:contentDescription="@null"
+        android:src="@drawable/done" />
+
+</RelativeLayout>

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#FFFFFF"
+    tools:context=".MakeAttendance" >
+
+    <EditText
+        android:id="@+id/edcname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="@string/cname"
+        android:inputType="text|textPersonName"
+        android:singleLine="true" >
+
+        <requestFocus />
+    </EditText>
+
+    <ImageButton
+        android:id="@+id/ithome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/itdone"
+        android:layout_marginRight="21dp"
+        android:background="@android:color/transparent"
+        android:contentDescription="@null"
+        android:src="@drawable/home" />
+
+    <ImageButton
+        android:id="@+id/itdone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/itok"
+        android:layout_centerHorizontal="true"
+        android:background="@android:color/transparent"
+        android:contentDescription="@null"
+        android:src="@drawable/done" />
+
+    <ImageButton
+        android:id="@+id/itok"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/edcname"
+        android:layout_marginLeft="22dp"
+        android:layout_marginTop="27dp"
+        android:background="@android:color/transparent"
+        android:contentDescription="@null"
+        android:src="@drawable/gen" />
+
+    <TextView
+        android:id="@+id/ttstu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/itok"
+        android:layout_below="@+id/ttrollid"
+        android:layout_marginTop="78dp"
+        android:text="@string/empty"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/ttrollid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/ttstu"
+        android:layout_below="@+id/itok"
+        android:layout_marginTop="52dp"
+        android:text="@string/empty"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/ttdate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/ttstu"
+        android:layout_below="@+id/ttrollid"
+        android:layout_marginTop="28dp"
+        android:text="@string/empty"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+</RelativeLayout>

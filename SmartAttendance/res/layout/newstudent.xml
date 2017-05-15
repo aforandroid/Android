@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#FFFFFF"
+    tools:context=".NewStudent" >
+
+    <EditText
+        android:id="@+id/txtstuname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/txtstuid"
+        android:layout_below="@+id/txtstuid"
+        android:layout_marginTop="22dp"
+        android:ems="10"
+        android:hint="@string/stuname"
+        android:inputType="text|textPersonName"
+        android:singleLine="true" >
+    </EditText>
+
+    <EditText
+        android:id="@+id/txtclsname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/txtstuname"
+        android:layout_below="@+id/txtstuname"
+        android:layout_marginTop="21dp"
+        android:ems="10"
+        android:hint="@string/cname"
+        android:inputType="text|textPersonName"
+        android:singleLine="true" />
+
+    <EditText
+        android:id="@+id/txtstumail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/txtstumob"
+        android:layout_below="@+id/txtstumob"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="@string/stumail"
+        android:inputType="textEmailAddress"
+        android:singleLine="true" />
+
+    <EditText
+        android:id="@+id/txtstuid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="23dp"
+        android:ems="10"
+        android:hint="@string/stuid"
+        android:inputType="text"
+        android:singleLine="true" >
+
+        <requestFocus />
+        <requestFocus />
+
+    </EditText>
+
+    <ImageButton
+        android:id="@+id/imghome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/imgdelete"
+        android:layout_marginLeft="18dp"
+        android:layout_toRightOf="@+id/imgdelete"
+        android:background="@android:color/transparent"
+        android:contentDescription="@null"
+        android:src="@drawable/home" />
+
+    <ImageButton
+        android:id="@+id/imginsert"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/txtstumail"
+        android:layout_marginTop="35dp"
+        android:background="@android:color/transparent"
+        android:contentDescription="@null"
+        android:src="@drawable/ins" />
+
+    <ImageButton
+        android:id="@+id/imgupdate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/imginsert"
+        android:layout_marginLeft="18dp"
+        android:layout_toRightOf="@+id/imginsert"
+        android:background="@android:color/transparent"
+        android:contentDescription="@null"
+        android:src="@drawable/upd" />
+
+    <ImageButton
+        android:id="@+id/imgdelete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/imgupdate"
+        android:layout_marginLeft="18dp"
+        android:layout_toRightOf="@+id/imgupdate"
+        android:background="@android:color/transparent"
+        android:contentDescription="@null"
+        android:src="@drawable/del" />
+
+    <EditText
+        android:id="@+id/txtstumob"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/txtclsname"
+        android:layout_below="@+id/txtclsname"
+        android:layout_marginTop="25dp"
+        android:ems="10"
+        android:hint="@string/stuno"
+        android:inputType="phone"
+        android:singleLine="true" />
+
+</RelativeLayout>

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#FFFFFF"
+    tools:context=".SendReport" >
+
+    <EditText
+        android:id="@+id/repsid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="32dp"
+        android:ems="10"
+        android:hint="@string/stuid"
+        android:inputType="text"
+        android:singleLine="true" >
+
+        <requestFocus />
+
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/repmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/repsid"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/repdone"
+        android:layout_marginTop="112dp"
+        android:ems="10"
+        android:hint="@string/report"
+        android:inputType="textMultiLine" />
+
+    <EditText
+        android:id="@+id/repmid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/repmail"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:ems="10"
+        android:hint="@string/stumail"
+        android:inputType="textEmailAddress"
+        android:singleLine="true" >
+    </EditText>
+
+    <ImageButton
+        android:id="@+id/rephome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/repsend"
+        android:layout_marginLeft="55dp"
+        android:layout_toRightOf="@+id/repsend"
+        android:background="@android:color/transparent"
+        android:contentDescription="@null"
+        android:src="@drawable/home" />
+
+    <ImageButton
+        android:id="@+id/repdone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/repsid"
+        android:layout_marginLeft="112dp"
+        android:layout_marginTop="28dp"
+        android:background="@android:color/transparent"
+        android:contentDescription="@null"
+        android:src="@drawable/done" />
+
+    <ImageButton
+        android:id="@+id/repsend"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/repdone"
+        android:layout_below="@+id/repmail"
+        android:layout_marginRight="52dp"
+        android:layout_marginTop="38dp"
+        android:background="@android:color/transparent"
+        android:contentDescription="@null"
+        android:src="@drawable/send" />
+
+</RelativeLayout>

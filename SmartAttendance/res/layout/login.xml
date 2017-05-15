@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#FFFFFF"
+    tools:context=".Login" >
+
+    <TextView
+        android:id="@+id/editmobno"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:text="@string/faclog"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <EditText
+        android:id="@+id/txtuname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/editmobno"
+        android:layout_marginTop="58dp"
+        android:ems="10"
+        android:hint="@string/uname"
+        android:inputType="text"
+        android:singleLine="true" >
+
+        <requestFocus />
+
+    </EditText>
+
+    <EditText
+        android:id="@+id/txtpass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/txtuname"
+        android:layout_marginTop="44dp"
+        android:ems="10"
+        android:hint="@string/pass"
+        android:inputType="textPassword"
+        android:singleLine="true" >
+
+    </EditText>
+
+    <ImageButton
+        android:id="@+id/iblogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtpass"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="58dp"
+        android:background="@android:color/transparent"
+        android:contentDescription="@null"
+        android:src="@drawable/login" />
+
+</RelativeLayout>

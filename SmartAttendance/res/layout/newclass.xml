@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#FFFFFF"
+    tools:context=".NewClass" >
+  
+    <EditText
+        android:id="@+id/txtstuds"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/txtcname"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/txtrollid"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:hint="@string/studs"
+        android:inputType="number|text"
+        android:singleLine="true" />
+
+    <ImageButton
+        android:id="@+id/ibhome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/ibdelete"
+        android:layout_alignLeft="@+id/ibupdate"
+        android:src="@drawable/home" 
+        android:background="@android:color/transparent"
+        android:contentDescription="@null"/>
+
+    <EditText
+        android:id="@+id/txtcname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="61dp"
+        android:ems="10"
+        android:hint="@string/cname"
+        android:inputType="text|textPersonName"
+        android:singleLine="true" >
+
+        <requestFocus />
+        <requestFocus />
+
+    </EditText>
+
+    <EditText
+        android:id="@+id/txtrollid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/txtcname"
+        android:layout_marginTop="23dp"
+        android:ems="10"
+        android:hint="@string/rollid"
+        android:inputType="text"
+        android:singleLine="true" />
+
+    <ImageButton
+        android:id="@+id/ibinsert"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/txtstuds"
+        android:layout_marginLeft="64dp"
+        android:layout_marginTop="29dp"
+        android:background="@android:color/transparent"
+        android:contentDescription="@null"
+        android:src="@drawable/ins" />
+
+    <ImageButton
+        android:id="@+id/ibdelete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/ibinsert"
+        android:layout_below="@+id/ibinsert"
+        android:layout_marginTop="23dp"
+        android:background="@android:color/transparent"
+        android:contentDescription="@null"
+        android:src="@drawable/del" />
+
+    <ImageButton
+        android:id="@+id/ibupdate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/ibinsert"
+        android:layout_marginLeft="58dp"
+        android:layout_toRightOf="@+id/ibinsert"
+        android:background="@android:color/transparent"
+        android:contentDescription="@null"
+        android:src="@drawable/upd" />
+
+</RelativeLayout>

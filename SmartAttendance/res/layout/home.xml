@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/homebg"
+    tools:context=".Home" >
+
+    <ImageButton
+        android:id="@+id/ibtakatt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/ibmgs"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="14dp"
+        android:background="@android:color/transparent"
+        android:contentDescription="@null"
+        android:src="@drawable/take" />
+
+    <ImageButton
+        android:id="@+id/ibmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/ibtakatt"
+        android:layout_alignTop="@+id/ibmgs"
+        android:background="@android:color/transparent"
+        android:contentDescription="@null"
+        android:src="@drawable/mail" />
+
+    <ImageButton
+        android:id="@+id/ibmgs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ibnewstud"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="24dp"
+        android:layout_toLeftOf="@+id/ibmail"
+        android:background="@android:color/transparent"
+        android:contentDescription="@null"
+        android:src="@drawable/mgs" />
+
+    <ImageButton
+        android:id="@+id/ibnewclass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="27dp"
+        android:layout_marginTop="49dp"
+        android:layout_toLeftOf="@+id/ibnewstud"
+        android:background="@android:color/transparent"
+        android:contentDescription="@null"
+        android:src="@drawable/clas" />
+
+    <ImageButton
+        android:id="@+id/ibnewstud"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/ibmgs"
+        android:layout_alignTop="@+id/ibnewclass"
+        android:background="@android:color/transparent"
+        android:contentDescription="@null"
+        android:src="@drawable/stud" />
+
+    <ImageButton
+        android:id="@+id/iblogout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ibgen"
+        android:layout_marginTop="20dp"
+        android:layout_toRightOf="@+id/ibmgs"
+        android:background="@android:color/transparent"
+        android:contentDescription="@null"
+        android:src="@drawable/logout" />
+
+    <ImageButton
+        android:id="@+id/ibgen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/ibmail"
+        android:layout_below="@+id/ibmail"
+        android:layout_marginTop="20dp"
+        android:background="@android:color/transparent"
+        android:contentDescription="@null"
+        android:src="@drawable/rep" />
+
+</RelativeLayout>

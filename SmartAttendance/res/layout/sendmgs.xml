@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#FFFFFF"
+    tools:context=".SendMessage" >
+
+    <EditText
+        android:id="@+id/txtstid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="36dp"
+        android:ems="10"
+        android:hint="@string/stuid"
+        android:singleLine="true" >
+
+        <requestFocus />
+        <requestFocus />
+
+    </EditText>
+
+    <ImageButton
+        android:id="@+id/ihome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/ibsendmgs"
+        android:layout_toRightOf="@+id/editmobno"
+        android:src="@drawable/home" 
+        android:background="@android:color/transparent"
+        android:contentDescription="@null"/>
+
+    <TextView
+        android:id="@+id/editmobno"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ibok"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="32dp"
+        android:text="@string/empty"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <ImageButton
+        android:id="@+id/ibsendmgs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtmgs"
+        android:layout_marginTop="36dp"
+        android:layout_toLeftOf="@+id/ibok"
+        android:background="@android:color/transparent"
+        android:contentDescription="@null"
+        android:src="@drawable/send" />
+
+    <ImageButton
+        android:id="@+id/ibok"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtstid"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="22dp"
+        android:background="@android:color/transparent"
+        android:contentDescription="@null"
+        android:src="@drawable/done" />
+
+    <EditText
+        android:id="@+id/txtmgs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/editmobno"
+        android:layout_marginTop="36dp"
+        android:ems="10"
+        android:hint="@string/mgs"
+        android:inputType="textMultiLine" />
+
+</RelativeLayout>
